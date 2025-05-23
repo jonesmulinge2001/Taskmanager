@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Users and Task Manager</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Users and Task Manager</h1>
+
+    <!-- add a new user here -->
+    <section>
+      <h2>Add User</h2>
+      <input type="text" id="nameOfUser" placeholder="Enter user name" />
+      <button id="addUserBtn">Add User</button>
+    </section>
+
+    <!-- add a task assign to a user here -->
+    <section>
+      <h2>Add Task and Assign To A User</h2>
+      <input type="text" id="taskTitleInput" placeholder="Enter task title" />
+      <select id="selectUser"></select>
+      <button id="addTaskBtn">Add Task</button>
+    </section>
+
+    <!-- display user and task here assigned to user -->
+    <section>
+      <h2>Users and Their Assigned Tasks</h2>
+      <div id="usersContainer"></div>
+    </section>
+  </div>
+
+  <script src="index.js" type="module"></script>
+</body>
+</html>
