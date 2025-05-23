@@ -149,5 +149,16 @@ const deleteTask = (userId:number,taskId:number) =>{
     displayUsers();
 }
 
+// function to update a task
+const updateTask = (userId:number,taskId:number,newTitle:string) =>{
+    // find the task with matching id
+    const task = user.tasks.find(task => task.id === taskId);
+    if(!task){
+        console.log('Task not found');
+        return;
+    }
+
+}
+
 addUsersToDropdown()
 displayUsers()
